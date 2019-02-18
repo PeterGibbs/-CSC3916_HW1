@@ -2,6 +2,7 @@ var express=require('express')
 var http=require('http')
 var bodyParser=require('body-parser')
 var app=express();
+
 app.use(bodyParser.text({
     type: function(req){
         return 'text';
@@ -17,4 +18,4 @@ app.post('/post',function(req,res){
     }
     res.send(req.body)
 });
-http.createServer(8080);
+http.createServer(app).listen(8080);
