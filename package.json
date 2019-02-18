@@ -1,0 +1,23 @@
+{
+  "name": "csc3916_hw1",
+  "version": "1.0.0",
+  "description": "\"# -CSC3916_HW1\"",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PeterGibbs/-CSC3916_HW1.git"
+  },
+  "author": "Peter Gibbs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PeterGibbs/-CSC3916_HW1/issues"
+  },
+  "homepage": "https://github.com/PeterGibbs/-CSC3916_HW1#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  }
+}
