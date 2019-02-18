@@ -2,7 +2,7 @@ var express=require('express')
 var http=require('http')
 var bodyParser=require('body-parser')
 var app=express();
-
+var port = process.env.PORT || 8080;
 app.use(bodyParser.text({
     type: function(req){
         return 'text';
@@ -27,5 +27,7 @@ app.post('/post',function(req,res){
     res.send(req.body)
 });
 
-http.createServer(app).listen(80);
+http.createServer(app).listen(port,()=>{
+    console.log("App is running on port " +port);
+});
 console.log("starting")
